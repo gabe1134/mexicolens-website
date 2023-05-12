@@ -1,0 +1,258 @@
+@charset "utf-8";
+
+
+/* HTML and Body styles */
+
+
+ html{
+   background: rgb(151, 151, 151);
+   font-family: Verdana, Geneva, sans-serif;
+   height: 100%;
+ }
+
+body {
+   background-color: #FFFAF0;
+   box-shadow: rgb(51, 51, 51) 10px 0px 40px, rgb(51, 51, 51) -10px 0px 40px;
+   border-left: 1px solid gray;
+   border-right: 1px solid gray;
+   min-height: 100%;   
+   margin: 0px auto;
+   min-width: 400px;
+   max-width: 1024px;   
+   width: 100%; 
+}
+
+
+
+/* Header styles */
+
+ header{
+   background: #FAEBD7;
+}
+
+header img#logoimg {
+   display: block;
+   height: 207px; 
+   width: 100%;
+  
+}
+
+/* Navigation list styles */
+
+ header nav ul {
+   width: 100%;
+}
+
+ header nav ul li {
+   font-size: 1em;   
+}
+
+header nav ul li a {
+   color: black;
+   display: block;
+   padding: 5px 20px;
+   width: 100%;
+   
+}
+
+  header nav ul li a:hover {
+   color: red;
+}
+
+ a#navicon {
+   display: none;
+}
+
+
+body {
+   line-height: 1.2em;
+}
+
+nav ul, ol {
+   list-style: none;
+}
+
+nav ul {
+   list-style: none;
+   list-style-image: none;
+}
+
+nav a {
+   text-decoration: none;
+}
+
+/* Article Styles */
+
+  article {
+   width: 90%;
+   margin: 20px auto;
+}
+
+#contentimg {
+   display: block;
+   height: 400px; 
+   width: 300px;
+   border: 2px solid rgb(191, 191,191);
+   margin: 0.25in auto;
+}
+
+#contentimg2 {
+   display: block;
+   height: 380px; 
+   width: 300px;
+   border: 2px solid rgb(191, 191,191);
+   margin-right: 15px;
+   float: right;
+}
+
+#contentimg3 {
+   display: block;
+   height: 250px; 
+   width: 450px;
+   border: 2px solid rgb(191, 191,191);
+	margin: 0.25in auto;
+}
+
+article h1 {
+   color: #006400;
+   font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+   font-weight: normal;
+   font-size: 2.5em;
+   letter-spacing: 0.03em;
+   line-height: 1.2em;
+   margin-bottom: 20px;
+   margin-left: 50px;
+   margin-right: 50px;
+}
+
+article h3 {
+	color: red;
+`	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	font-weight: normal;
+	letter-spacing: 0.03em;
+   line-height: 1.2em;
+   margin-bottom: 20px;
+   margin-left: 50px;
+   margin-right: 50px;
+}
+
+article p {
+   line-height: 1.5;
+   margin-bottom: 15px;
+   margin-left: 50px;
+   margin-right: 50px;
+}
+
+article p em {
+   color: #2E8B57;
+}
+
+dl {
+   display: flex;
+   flex-flow: column nowrap;
+   align-items: center;
+   justify-content: center;
+}
+
+dt, dd {
+   width: 70%;
+   margin: 5px;
+   text-align: center;
+}
+
+dt {
+   border-top: 1px solid black;
+   font-weight: bold;
+   padding-top: 5px;
+}
+
+
+#dtimage {
+   display: block;
+   height: 200px; 
+   width: 30%;
+  }
+
+/* Footer styles */   
+
+footer {
+   bottom: 0;
+   clear: both;
+   color: black;    
+   background: #FAEBD7;
+   font-size: 0.8em;  
+   font-style: normal;
+   width: 100%;
+   height: 50px;
+   text-align: center;
+}
+
+
+/* ===============================
+   Mobile Styles: 0px to 640px 
+   ===============================
+*/
+/*The following css code has syntx error */
+
+@media only screen and (max-width: 640px) {
+
+   
+	a#navicon {
+	display: block;
+}
+
+	header nav {
+   padding-bottom: 5px;
+}
+   
+   header nav ul {
+      display: ;
+}
+   
+    header nav ul li {
+      font-size: 1em;
+      line-height: 1.3em;
+      height: 1.3em;
+} 
+   
+   a#navicon:hover+ul, header nav ul:hover {
+      display: block;
+   }
+   
+   header img#logoimg {
+      width: 100%;
+	  
+   }
+   
+   article {
+      display:;
+   }
+   
+    footer nav ul, footer section {
+      font-size: 1.2em;
+      width: 100%;
+   }
+}
+
+
+/* =============================================
+   Tablet and Desktop Styles: greater than 640px
+   =============================================
+*/
+
+@media only screen and (min-width: 641px) {
+    
+   header nav ul {
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-flow: row nowrap;
+      flex-flow: row nowrap;
+      -webkit-justify-content: center;
+      justify-content: center;
+   }
+   
+   header nav ul li {
+      -webkit-flex: 0 1 auto;
+      flex: 0 1 auto;
+   }
+}

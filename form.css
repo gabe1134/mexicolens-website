@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+caption { margin: 1em;
+        font-weight: bold;
+		font-size: 120%; }
+label { float: left;
+	  display: block;
+	  text-align: right;
+	  font-weight: bold;
+	  width: 10em;
+	  padding-right: 1em; 
+}
+input, textarea { display: block;
+              margin-bottom: 2em; 
+}
